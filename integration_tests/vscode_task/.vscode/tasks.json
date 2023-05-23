@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run integration tests",
+            "type": "shell",
+            "command": "${workspaceFolder}/test.sh",
+            "args": [
+                "${workspaceFolder}"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
