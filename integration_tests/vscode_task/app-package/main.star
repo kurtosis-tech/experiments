@@ -23,4 +23,5 @@ def run(plan, args):
 		endpoint = "/test",
 		port_id = "api",
 	)
-    plan.request(recipe = recipe, service_name = "app")
+    response = plan.request(recipe = recipe, service_name = "app")
+    plan.assert(response["code"], "==", 200)
